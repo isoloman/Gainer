@@ -1,0 +1,7 @@
+
+platform :ios, '9.0'
+target 'Gainer' do
+pod 'SVProgressHUD'
+pod 'AFNetworking', '~> 4.0'
+pod 'AvoidCrash', '~> 2.5.2'
+end 

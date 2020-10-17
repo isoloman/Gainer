@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-Ap-cJI">
+                                <rect key="frame" x="176" y="194" width="62" height="30"/>
+                                <state key="normal" title="一键绑定"/>
+                                <connections>
+                                    <action selector="allBind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9k-2S-bJq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skM-JF-1C2">
+                                <rect key="frame" x="176" y="247" width="62" height="30"/>
+                                <state key="normal" title="一件解绑"/>
+                                <connections>
+                                    <action selector="allUnbind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2uS-Hp-nOA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="昵称/电话号码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVa-2G-nrg">
+                                <rect key="frame" x="65" y="70" width="283" height="34"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KR7-8X-PiN">
+                                <rect key="frame" x="66" y="135" width="283" height="34"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfb-3i-1GT">
+                                <rect key="frame" x="158.5" y="285" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XPj-9o-chf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="hgc-nl-veq"/>
+                                </constraints>
+                                <state key="normal" title="获取token和id"/>
+                                <connections>
+                                    <action selector="getTokenAndId:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hau-qS-bJv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-K7-dBa">
+                                <rect key="frame" x="42" y="285" width="92" height="30"/>
+                                <state key="normal" title="加入动态绑定"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="faU-ad-Faq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2N2-7m-58Q">
+                                <rect key="frame" x="280" y="285" width="92" height="30"/>
+                                <state key="normal" title="移除动态绑定"/>
+                                <connections>
+                                    <action selector="remove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FFs-SX-Jaw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KR7-8X-PiN" secondAttribute="trailing" constant="65" id="7Z0-Nn-424"/>
+                            <constraint firstItem="WK1-K7-dBa" firstAttribute="centerY" secondItem="Wfb-3i-1GT" secondAttribute="centerY" id="GOT-xt-Q0B"/>
+                            <constraint firstItem="Tg1-Ap-cJI" firstAttribute="top" secondItem="KR7-8X-PiN" secondAttribute="bottom" constant="25" id="GuY-y9-E47"/>
+                            <constraint firstItem="Wfb-3i-1GT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="WK1-K7-dBa" secondAttribute="trailing" constant="24.5" id="HoK-xU-pkp"/>
+                            <constraint firstItem="KR7-8X-PiN" firstAttribute="top" secondItem="gVa-2G-nrg" secondAttribute="bottom" constant="31" id="Hxx-cm-XIO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVa-2G-nrg" secondAttribute="trailing" constant="66" id="Tyx-aA-Nqy"/>
+                            <constraint firstItem="Wfb-3i-1GT" firstAttribute="top" secondItem="skM-JF-1C2" secondAttribute="bottom" constant="8" id="Ygg-2l-pzO"/>
+                            <constraint firstItem="Tg1-Ap-cJI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="al8-99-Q4Y"/>
+                            <constraint firstItem="KR7-8X-PiN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="eBP-WW-VRG"/>
+                            <constraint firstItem="gVa-2G-nrg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="efa-d2-LqU"/>
+                            <constraint firstItem="2N2-7m-58Q" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Wfb-3i-1GT" secondAttribute="trailing" constant="24.5" id="jXH-Sw-0fn"/>
+                            <constraint firstItem="Wfb-3i-1GT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r1l-sP-tEr"/>
+                            <constraint firstItem="skM-JF-1C2" firstAttribute="top" secondItem="Tg1-Ap-cJI" secondAttribute="bottom" constant="23" id="rCl-xm-46m"/>
+                            <constraint firstItem="skM-JF-1C2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rjc-Pa-mBJ"/>
+                            <constraint firstItem="2N2-7m-58Q" firstAttribute="centerY" secondItem="Wfb-3i-1GT" secondAttribute="centerY" id="yMa-iC-OkV"/>
+                            <constraint firstItem="gVa-2G-nrg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="ymc-Yl-Szo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="name" destination="gVa-2G-nrg" id="7VE-Yb-ddY"/>
+                        <outlet property="password" destination="KR7-8X-PiN" id="hNb-y5-j3n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
         </scene>
     </scenes>
 </document>

@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F8E3F7024ED47BEA11DB006 /* libPods-Gainer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D78F6C3EB71E4504375215 /* libPods-Gainer.a */; };
 		D568993A253AC5E80019542E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5689939253AC5E80019542E /* AppDelegate.m */; };
-		D568993D253AC5E80019542E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D568993C253AC5E80019542E /* SceneDelegate.m */; };
 		D5689940253AC5E90019542E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D568993F253AC5E90019542E /* ViewController.m */; };
 		D5689943253AC5E90019542E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5689941253AC5E90019542E /* Main.storyboard */; };
 		D5689945253AC5EA0019542E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5689944253AC5EA0019542E /* Assets.xcassets */; };
@@ -16,6 +16,9 @@
 		D568994B253AC5EA0019542E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D568994A253AC5EA0019542E /* main.m */; };
 		D5689955253AC5EB0019542E /* GainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5689954253AC5EB0019542E /* GainerTests.m */; };
 		D5689960253AC5EB0019542E /* GainerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D568995F253AC5EB0019542E /* GainerUITests.m */; };
+		D5689975253AC8F80019542E /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D5689972253AC8F80019542E /* AFAppDotNetAPIClient.m */; };
+		D5689976253AC8F80019542E /* GNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5689973253AC8F80019542E /* GNetworkManager.m */; };
+		D568997A253AE4A30019542E /* YCStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D5689979253AE4A30019542E /* YCStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42155D7058949D273EC0D261 /* Pods-Gainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gainer.debug.xcconfig"; path = "Target Support Files/Pods-Gainer/Pods-Gainer.debug.xcconfig"; sourceTree = "<group>"; };
+		B6D78F6C3EB71E4504375215 /* libPods-Gainer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Gainer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17A7A2C39D42F2BB99149CE /* Pods-Gainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gainer.release.xcconfig"; path = "Target Support Files/Pods-Gainer/Pods-Gainer.release.xcconfig"; sourceTree = "<group>"; };
 		D5689935253AC5E80019542E /* Gainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5689938253AC5E80019542E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D5689939253AC5E80019542E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D568993B253AC5E80019542E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		D568993C253AC5E80019542E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		D568993E253AC5E90019542E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D568993F253AC5E90019542E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D5689942253AC5E90019542E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,12 @@
 		D568995B253AC5EB0019542E /* GainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D568995F253AC5EB0019542E /* GainerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GainerUITests.m; sourceTree = "<group>"; };
 		D5689961253AC5EB0019542E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5689971253AC8F80019542E /* GNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNetworkManager.h; sourceTree = "<group>"; };
+		D5689972253AC8F80019542E /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		D5689973253AC8F80019542E /* GNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNetworkManager.m; sourceTree = "<group>"; };
+		D5689974253AC8F80019542E /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
+		D5689978253AE4A30019542E /* YCStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCStorage.h; sourceTree = "<group>"; };
+		D5689979253AE4A30019542E /* YCStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F8E3F7024ED47BEA11DB006 /* libPods-Gainer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AEC582DB76F242B5D1E86DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42155D7058949D273EC0D261 /* Pods-Gainer.debug.xcconfig */,
+				D17A7A2C39D42F2BB99149CE /* Pods-Gainer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D568992C253AC5E80019542E = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +108,8 @@
 				D5689953253AC5EB0019542E /* GainerTests */,
 				D568995E253AC5EB0019542E /* GainerUITests */,
 				D5689936253AC5E80019542E /* Products */,
+				6AEC582DB76F242B5D1E86DB /* Pods */,
+				F6B7FDC662BA45F76532F90C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +126,10 @@
 		D5689937253AC5E80019542E /* Gainer */ = {
 			isa = PBXGroup;
 			children = (
+				D5689977253AE4A30019542E /* Storage */,
+				D5689970253AC8F80019542E /* Netwrok */,
 				D5689938253AC5E80019542E /* AppDelegate.h */,
 				D5689939253AC5E80019542E /* AppDelegate.m */,
-				D568993B253AC5E80019542E /* SceneDelegate.h */,
-				D568993C253AC5E80019542E /* SceneDelegate.m */,
 				D568993E253AC5E90019542E /* ViewController.h */,
 				D568993F253AC5E90019542E /* ViewController.m */,
 				D5689941253AC5E90019542E /* Main.storyboard */,
@@ -137,6 +159,34 @@
 			path = GainerUITests;
 			sourceTree = "<group>";
 		};
+		D5689970253AC8F80019542E /* Netwrok */ = {
+			isa = PBXGroup;
+			children = (
+				D5689971253AC8F80019542E /* GNetworkManager.h */,
+				D5689973253AC8F80019542E /* GNetworkManager.m */,
+				D5689974253AC8F80019542E /* AFAppDotNetAPIClient.h */,
+				D5689972253AC8F80019542E /* AFAppDotNetAPIClient.m */,
+			);
+			path = Netwrok;
+			sourceTree = "<group>";
+		};
+		D5689977253AE4A30019542E /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				D5689978253AE4A30019542E /* YCStorage.h */,
+				D5689979253AE4A30019542E /* YCStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		F6B7FDC662BA45F76532F90C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6D78F6C3EB71E4504375215 /* libPods-Gainer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5689964253AC5EB0019542E /* Build configuration list for PBXNativeTarget "Gainer" */;
 			buildPhases = (
+				9879CA8746B9E5F2F23F9835 /* [CP] Check Pods Manifest.lock */,
 				D5689931253AC5E80019542E /* Sources */,
 				D5689932253AC5E80019542E /* Frameworks */,
 				D5689933253AC5E80019542E /* Resources */,
+				4E2AE357C7F9A005AC0ED6CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,15 +314,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E2AE357C7F9A005AC0ED6CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gainer/Pods-Gainer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gainer/Pods-Gainer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gainer/Pods-Gainer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9879CA8746B9E5F2F23F9835 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gainer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5689931253AC5E80019542E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D568997A253AE4A30019542E /* YCStorage.m in Sources */,
 				D5689940253AC5E90019542E /* ViewController.m in Sources */,
 				D568993A253AC5E80019542E /* AppDelegate.m in Sources */,
 				D568994B253AC5EA0019542E /* main.m in Sources */,
-				D568993D253AC5E80019542E /* SceneDelegate.m in Sources */,
+				D5689975253AC8F80019542E /* AFAppDotNetAPIClient.m in Sources */,
+				D5689976253AC8F80019542E /* GNetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +533,14 @@
 		};
 		D5689965253AC5EB0019542E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42155D7058949D273EC0D261 /* Pods-Gainer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8836PS4XTW;
 				INFOPLIST_FILE = Gainer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,10 +553,14 @@
 		};
 		D5689966253AC5EB0019542E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17A7A2C39D42F2BB99149CE /* Pods-Gainer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8836PS4XTW;
 				INFOPLIST_FILE = Gainer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
